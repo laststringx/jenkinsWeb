@@ -14,15 +14,22 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-maven-plugin -->
+    <!-- https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-maven-plugin 
 <dependency>
     <groupId>org.codehaus.sonar</groupId>
     <artifactId>sonar-maven-plugin</artifactId>
     <version>3.2</version>
 </dependency>
-
+-->
   </dependencies>
   <build>
     <finalName>Jenkins</finalName>
   </build>
+  <plugins>
+  <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.2</version>
+  </plugin>
+  </plugins>
 </project>
